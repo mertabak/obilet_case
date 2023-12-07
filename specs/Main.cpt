@@ -1,0 +1,87 @@
+Created by merttabak on 2.12.2023
+
+# Giriş ekranı elementlerinin varlığı kontrol edilir
+* "id" tipindeki "com.obilet.androidside:id/toolbar_image_header" locatorlı "obilet_Banner" ismindeki elementi sayfada kontrol et
+* "xpath" tipindeki "//android.widget.TextView[@text='Otobüs']" locatorlı "otobus_Button" ismindeki elementi sayfada kontrol et
+* "id" tipindeki "com.obilet.androidside:id/find_bus_journey_from_where_textView" locatorlı "nereden_Button" ismindeki elementi sayfada kontrol et
+* "id" tipindeki "com.obilet.androidside:id/find_bus_journey_departure_date_textView" locatorlı "gidis_Tarihi" ismindeki elementi sayfada kontrol et
+* "id" tipindeki "com.obilet.androidside:id/find_bus_journey_find_button" locatorlı "otobus_Bileti_Bul" ismindeki elementi sayfada kontrol et
+
+# Hesabım sayfasına gidilir
+* "id" tipindeki "com.obilet.androidside:id/bottom_nav_account" locatorlı "hesabim_Button" ismindeki elemente tıkla
+
+# Üye girişi yapın alanına tıklanır
+* "id" tipindeki "com.obilet.androidside:id/login_button_main_account" locatorlı "uyeGirisi_Button" ismindeki elemente tıkla
+
+# Hemen üye ol alanına tıklanır
+* "xpath" tipindeki "//android.widget.TextView[@text='HEMEN ÜYE OL']" locatorlı "hemen_uyeOl_Button" ismindeki elemente tıkla
+
+# Rastgele mail adresi ve parola : <passsword> ile Üyelik oluşturulur
+* Rastgele 10 haneli email adresi oluştur ve "id" tipindeki "com.obilet.androidside:id/input_editText" locatorlı "mail_Adresi" alanına yaz
+* "xpath" tipindeki "//android.widget.EditText[@text='Doldurulması zorunludur.']" locatorlı "password" ismindeki elemente <passsword> degerini yaz
+* "id" tipindeki "com.obilet.androidside:id/sign_up_button" locatorlı "uyeOl_Button" ismindeki elemente tıkla
+
+# Hesabım alanı elementlerinin varlığı kontrol edilir
+* "id" tipindeki "com.obilet.androidside:id/toolbar_title" locatorlı "hesabim_Title" ismindeki elementi sayfada kontrol et
+* "xpath" tipindeki "//android.widget.TextView[@text='Profilim']" locatorlı "hesabim_Profilim" ismindeki elementi sayfada kontrol et
+* "xpath" tipindeki "//android.widget.TextView[@text='Kampanyalarım']" locatorlı "hesabim_Kampayanlarim" ismindeki elementi sayfada kontrol et
+* "xpath" tipindeki "//android.widget.TextView[@text='Ayarlar']" locatorlı "hesabim_Ayarlar" ismindeki elementi sayfada kontrol et
+
+# Ara butonuna tıklanır
+* "id" tipindeki "com.obilet.androidside:id/bottom_nav_find_journey" locatorlı "ara_Button" ismindeki elemente tıkla
+
+# Otobüs tabına tıklanır
+* "xpath" tipindeki "//android.widget.TextView[@text='Otobüs']" locatorlı "otobus_Tab_Button" ismindeki elemente tıkla
+
+# Otobüs tab elementlerinin varlığı kontrol edilir
+* "xpath" tipindeki "//android.widget.TextView[@text='Otobüs']" locatorlı "otobus_Button" ismindeki elementi sayfada kontrol et
+* "id" tipindeki "com.obilet.androidside:id/find_bus_journey_from_where_textView" locatorlı "nereden_Button" ismindeki elementi sayfada kontrol et
+* "id" tipindeki "com.obilet.androidside:id/find_bus_journey_departure_date_textView" locatorlı "gidis_Tarihi" ismindeki elementi sayfada kontrol et
+* "id" tipindeki "com.obilet.androidside:id/find_bus_journey_find_button" locatorlı "otobus_Bileti_Bul" ismindeki elementi sayfada kontrol et
+
+# Nereden alanından <text> değeri aratılır
+* "id" tipindeki "com.obilet.androidside:id/find_bus_journey_to_where_textView" locatorlı "nereden_Button" ismindeki elemente tıkla
+* "id" tipindeki "com.obilet.androidside:id/search_editText" locatorlı "nereden_Firma_adi" ismindeki elemente <text> degerini yaz
+* "xpath" tipindeki "//android.widget.TextView[@text='Prag Çek Cumhuriyeti']" locatorlı "sehir_Prag" ismindeki elemente tıkla
+
+# Nereye alanından <text> değeri aratılır
+* "id" tipindeki "com.obilet.androidside:id/find_bus_journey_from_where_textView" locatorlı "nereye_Button" ismindeki elemente tıkla
+* "id" tipindeki "com.obilet.androidside:id/search_editText" locatorlı "nereye_Firma_adi" ismindeki elemente <text> degerini yaz
+* "xpath" tipindeki "//android.widget.TextView[@text='Berlin Almanya']" locatorlı "sehir_Berlin" ismindeki elemente tıkla
+
+# Gidiş tarihi alanının ekranda varlığı kontrol edilir
+* "id" tipindeki "com.obilet.androidside:id/find_bus_journey_departure_date_label" locatorlı "gidisTarihi" ismindeki elementi sayfada kontrol et
+
+# Rastgele gidiş tarihi seçimi yapılır
+* "id" tipindeki "com.obilet.androidside:id/find_bus_journey_departure_date_textView" locatorlı "gidisTarihi_Button" ismindeki elemente tıkla
+* "//android.widget.TextView[@resource-id='com.obilet.androidside:id/tv_day_number']" değeri olan "calender" isimli alanda rastgele seçim yapılır
+
+# Otobüs bileti araması yapılır
+* "id" tipindeki "com.obilet.androidside:id/find_bus_journey_find_button" locatorlı "otobus_Bileti_Bul" ismindeki elemente tıkla
+
+# Listeleme sayfasında sefer kontrolü yapılır
+* "id" tipindeki "com.obilet.androidside:id/item_bus_journey_list_rootLayout" locatorlı "ilk_Sefer" ismindeki elementi sayfada kontrol et
+
+# Listeden random sefer seçimi yapılır
+* "//*[@resource-id='com.obilet.androidside:id/item_detail_examine_textView']" değeri olan "random_Sefer" isimli alanda rastgele seçim yapılır
+
+# Branded Fare alanının ekranda kontrolü yapılır
+* "id" tipindeki "com.obilet.androidside:id/bus_journey_branded_fare_container" locatorlı "branded_Fare" ismindeki elementi sayfada kontrol et
+
+# Branded Fare alanından koltuk adedi 1 adet arttılır
+* "id" tipindeki "com.obilet.androidside:id/branded_fare_increase_ticket_button" locatorlı "branded_Fare_Arti" ismindeki elemente tıkla
+
+# Branded Fare seçimi yapılır
+* "id" tipindeki "com.obilet.androidside:id/branded_fare_price_next_button" locatorlı "branded_Fare_secim" ismindeki elemente tıkla
+
+# Checkout sayfası elementlerinin varlığı kontrol edilir
+* "id" tipindeki "com.obilet.androidside:id/contact_info_header_textView" locatorlı "iletisim_Bilgileri" ismindeki elementi sayfada kontrol et
+* "id" tipindeki "com.obilet.androidside:id/passenger_info_header_textView" locatorlı "yolcu_Bilgileri" ismindeki elementi sayfada kontrol et
+* "id" tipindeki "com.obilet.androidside:id/payment_options_header_textView" locatorlı "odeme_Bilgileri" ismindeki elementi sayfada kontrol et
+* "xpath" tipindeki "//android.widget.TextView[@text='Toplam Fiyat :']" locatorlı "toplam_Fiyat" ismindeki elementi sayfada kontrol et
+* "id" tipindeki "com.obilet.androidside:id/contact_phone_title" locatorlı "cep_Telefonu" ismindeki elementi sayfada kontrol et
+
+
+
+
+
